@@ -1,11 +1,98 @@
 <!doctype html>
 <html>
 <head>
-  <title>Index Page</title>
+  <title>World Wide Web</title>
   <meta charset="utf-8">
+  <style>
+    a {
+      color:black;
+      text-decoration:none;
+      }
+    h1{
+      font-size: 45px;
+      text-align:center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px
+      }
+    ul{
+      border-right:1px solid gray;
+      width:150px;
+      margin:0;
+      padding:20px
+    }
+    #grid ul{
+      padding-left:36px;
+    }
+    #grid #article{
+      padding-left:32px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 200px 1fr;
+    }
+    @media(max-width:690px){
+      #grid{
+        display:block;
+      }
+      ul{
+        border-right:none;
+      }
+      h1{border-bottom:none;}
+    }
+  </style>
 </head>
-
 <body>
-  <h1>HTML에 오신걸 환영합니다</h1>
-  <h2>자세한 HTML에 관한 내용은 <a href="https://www.naver.com" target = _blank title=클릭하지좀마 > https://www.naver.com </a> 을 참고해주세요 </h2
+  <!--동영상
+  <iframe width="100%" height="80%" -
+  src="https://youtu.be/7T7r_oSp0SE"
+  frameborder="0" allowfullscreen></iframe>
+  -->
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ul>
+      <li><a href = "HTML.html" > HTML</a></li>
+      <li><a href = "CSS.html"> CSS</a></li>
+      <li><a href = "JavaScript.html"> JavaScript</a></li>
+    </ul>
+    <div id="article">
+      <h2>WEB</h2>
+        <p><u><a href ="https://en.wikipedia.org/wiki/World_Wide_Web" style="color:blue;">The World Wide Web (WWW)</a></u> commonly known as the Web, was originally a hypertext document management system[1] accessed over the Internet.[2] It has since evolved into the world's dominant software platform.[3]</p>
+        <p>The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server.
+        Web resources may be any type of downloaded media, but web pages are hypertext documents formatted in Hypertext Markup Language (HTML).[4] Special HTML syntax displays embedded hyperlinks with URLs, which permits users to navigate to other web resources.</p>
+        <p>In addition to text, web pages may contain references to images, video, audio, and software components, which are either displayed or internally executed in the user's web browser to render pages or streams of multimedia content.
+        Multiple web resources with a common theme and usually a common domain name make up a website. Websites are stored in computers that are running a web server, which is a program that responds to requests made over the Internet from web browsers running on a user's computer.
+        Website content can be provided by a publisher or interactively from user-generated content. Websites are provided for a myriad of informative, entertainment, commercial, and governmental reasons.</p>
+    </div>
+  </div>
+<img src= "WEB.jpg" width ="100%" >
+<p><!--댓글기 -->
+  <div id="disqus_thread"></div>
+  <script>
+      /**
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web-93x3pyy6dp.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>-->
+<p><!--채팅기능
+  Start of Tawk.to Script 채팅기능 ~!-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/623d4fcf0bfe3f4a876f9d78/1fuvnvh7f';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</p>
 </body>
+</html>
